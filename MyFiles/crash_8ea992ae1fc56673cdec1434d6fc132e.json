@@ -1,0 +1,15 @@
+{
+    "code": 0,
+    "message": "ListView not found: LisAlumno\n\nStack trace:\n#0 \\Core\\Lib\\ExtendedController\\ListController.php(230): FacturaScripts\\Core\\Lib\\ExtendedController\\BaseController-&gt;listView(&#39;LisAlumno&#39;)\n#1 \\Plugins\\miprimerplugin\\Controller\\ListAlumno.php(21): FacturaScripts\\Core\\Lib\\ExtendedController\\ListController-&gt;addOrderBy(&#39;LisAlumno&#39;, Array, &#39;Fecha de nacimi...&#39;)\n#2 \\Core\\Lib\\ExtendedController\\BaseController.php(215): FacturaScripts\\Plugins\\miprimerplugin\\Controller\\ListAlumno-&gt;createViews()\n#3 \\Core\\Lib\\ExtendedController\\ListController.php(59): FacturaScripts\\Core\\Lib\\ExtendedController\\BaseController-&gt;privateCore(Object(Symfony\\Component\\HttpFoundation\\Response), Object(FacturaScripts\\Dinamic\\Model\\User), Object(FacturaScripts\\Core\\Base\\ControllerPermissions))\n#4 \\Core\\Base\\Controller.php(301): FacturaScripts\\Core\\Lib\\ExtendedController\\ListController-&gt;privateCore(Object(Symfony\\Component\\HttpFoundation\\Response), Object(FacturaScripts\\Dinamic\\Model\\User), Object(FacturaScripts\\Core\\Base\\ControllerPermissions))\n#5 \\Core\\Kernel.php(367): FacturaScripts\\Core\\Base\\Controller-&gt;run()\n#6 \\Core\\Kernel.php(186): FacturaScripts\\Core\\Kernel::runController(&#39;\/ListAlumno&#39;)\n#7 \\index.php(63): FacturaScripts\\Core\\Kernel::run(&#39;\/facturascripts...&#39;)\n#8 {main}",
+    "file": "\\Core\\Lib\\ExtendedController\\BaseController.php",
+    "line": 198,
+    "fragment": "    {\n193    {\n194        if (isset($this->views[$viewName]) && $this->views[$viewName] instanceof ListView) {\n195            return $this->views[$viewName];\n196        }\n197\n<spam style=\"padding-top: 0.1rem; padding-bottom: 0.1rem; background-color: red; color: white\">198        throw new Exception('ListView not found: ' . $viewName);<\/spam>\n199    }\n200\n201    \/**\n202     * Runs the controller's private logic.\n203     *",
+    "hash": "8ea992ae1fc56673cdec1434d6fc132e",
+    "url": "\/facturascripts\/ListAlumno",
+    "report_url": "https:\/\/facturascripts.com\/errores\/8ea992ae1fc56673cdec1434d6fc132e",
+    "report_qr": "https:\/\/api.qrserver.com\/v1\/create-qr-code\/?size=150x150&data=https%3A%2F%2Ffacturascripts.com%2Ferrores%2F8ea992ae1fc56673cdec1434d6fc132e",
+    "core_version": 2024.9,
+    "php_version": "8.2.18",
+    "os": "WINNT",
+    "plugin_list": "miprimerplugin"
+}

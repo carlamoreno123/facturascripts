@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+    <column>
+        <name>idrecibo</name>
+        <type>serial</type>
+        <null>NO</null>
+    </column>
+    <column>
+        <name>idalumno</name>
+        <type>serial</type>
+        <null>NO</null>
+    </column>
+     <column>
+        <name>fecha</name>
+        <type>date</type>
+        <null>NO</null>
+    </column>
+     <column>
+        <name>fechapago</name>
+        <type>date</type>
+        <null>NO</null>
+    </column>
+     <column>
+        <name>importe</name>
+        <type>money</type>
+        <null>NO</null>
+    </column>
+     <column>
+        <name>formadepago</name>
+        <type>date</type>
+        <null>NO</null>
+    </column>
+    <column>
+        <name>tipo</name>
+        <type>character varying(50)</type>
+        <null>NO</null>
+    </column>
+    <constraint>
+        <name>recibo_pkey</name>
+        <type>PRIMARY KEY (idrecibo)</type>
+     </constraint>
+</table>

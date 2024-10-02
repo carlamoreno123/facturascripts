@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view>
+    <columns>
+        <column name="idrecibo" order="100">
+            <widget type="text" fieldname="idrecibo"/>
+        </column>
+        <column name="idalumno" order="110" display="center">
+            <widget type="text" fieldname="idalumno"/>
+        </column>
+        <column name="fecha" order="120" display="center">
+            <widget type="date" fieldname="fecha"/>
+        </column>
+        <column name="fechapago" order="130" display="center">
+            <widget type="text" fieldname="fechapago"/>
+        </column>
+        <column name="importe" order="140" display="center">
+            <widget type="money" fieldname="importe"/>
+        </column>
+        <column name="fechapago" order="130" display="center">
+            <widget type="date" fieldname="fechapago"/>
+        </column>
+        <column name="formadepago" order="140" display="center">
+            <widget type="text" fieldname="formadepago"/>
+        </column>
+        <column name="tipo" order="140" display="center">
+        <widget type="text" fieldname="tipo"/>
+         </column>
+    </columns>
+</view>

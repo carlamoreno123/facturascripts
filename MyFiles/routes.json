@@ -339,6 +339,11 @@
         "customId": "",
         "position": 0
     },
+    "\/Editrecibo": {
+        "controller": "\\FacturaScripts\\Dinamic\\Controller\\Editrecibo",
+        "customId": "",
+        "position": 0
+    },
     "\/Files": {
         "controller": "\\FacturaScripts\\Dinamic\\Controller\\Files",
         "customId": "",
@@ -496,6 +501,11 @@
     },
     "\/ListUser": {
         "controller": "\\FacturaScripts\\Dinamic\\Controller\\ListUser",
+        "customId": "",
+        "position": 0
+    },
+    "\/Listrecibo": {
+        "controller": "\\FacturaScripts\\Dinamic\\Controller\\Listrecibo",
         "customId": "",
         "position": 0
     },

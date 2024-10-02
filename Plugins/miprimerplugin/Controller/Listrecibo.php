@@ -7,26 +7,26 @@
         public function getPageData(): array
         {
             $page = parent :: getPageData();
-            $page ['title'] ='Alumnos';
+            $page ['title'] ='recibos';
             $page ['menu'] ='Academia';
-            $page ['icon'] ='fas fa-user-friends';
+            $page ['icon'] ='fa-solid fa-folder';
             return $page;
         }
 
         protected function  createViews()
         {
-            $this ->addView('ListAlumno','Alumno');
-        $this->addSearchFields('ListAlumno', ['nombre', 'dni' , 'telefono' ,'email']);
-        $this->addOrderBy('ListAlumno', ['nombre'], 'Nombre');
-        $this->addOrderBy('ListAlumno', ['fechanacimiento'], 'fechanacimiento',2);
-        $this->addFilterPeriod('ListAlumno', 'date', 'period', 'fechanacimiento');
+            $this ->addView('Listrecibos','recibo');
+        $this->addSearchFields('Listrecibos', ['fecha', 'fechapago' , 'importe' ,'formadepago']);
+        $this->addOrderBy('Listrecibos', ['fecha'], 'fecha');
+        $this->addOrderBy('Listrecibos', ['fechapago'], 'fechapago');
+        $this->addFilterPeriod('Lisrecibos', 'date', 'period', 'fecha');
 
        
         }
         protected function loadData($viewName, $view)
         {
             switch($viewName){
-                case 'ListAlumno':
+                case 'Listrecibos':
                     $view ->loadData();
                     break;
             }
