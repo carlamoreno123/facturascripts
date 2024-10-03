@@ -1,4 +1,13 @@
 [
     "pages",
-    "empresas"
+    "empresas",
+    "work_events",
+    "settings",
+    "users",
+    "recibos",
+    "pages_options",
+    "pages_filters",
+    "divisas",
+    "formatos_documentos",
+    "alumnos"
 ]

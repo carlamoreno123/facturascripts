@@ -1,29 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <view>
     <columns>
-        <column name="idrecibo" order="100">
-            <widget type="text" fieldname="idrecibo"/>
-        </column>
-        <column name="idalumno" order="110" display="center">
-            <widget type="text" fieldname="idalumno"/>
-        </column>
-        <column name="fecha" order="120" display="center">
-            <widget type="date" fieldname="fecha"/>
-        </column>
-        <column name="fechapago" order="130" display="center">
-            <widget type="text" fieldname="fechapago"/>
-        </column>
-        <column name="importe" order="140" display="center">
-            <widget type="money" fieldname="importe"/>
-        </column>
-        <column name="fechapago" order="130" display="center">
-            <widget type="date" fieldname="fechapago"/>
-        </column>
-        <column name="formadepago" order="140" display="center">
-            <widget type="text" fieldname="formadepago"/>
-        </column>
-        <column name="tipo" order="140" display="center">
-        <widget type="text" fieldname="tipo"/>
-         </column>
+    <column name="Alumno" order="100">
+    <widget type="autocomplete" fieldname="idalumno" onclick="EditAlumno">
+    <values source="alumnos" fieldcode="idalumno" fieldtitle="nombre"/>
+    </widget>
+    </column>
+    <column name="Importe" order="110" display="right">
+    <widget type="money" fieldname="importe"/>
+    </column>
+    <column name="Fecha" order="120" display="center">
+    <widget type="date" fieldname="fecha"/>
+    </column>
+    <column name="Tipo" order="130">
+    <widget type="text" fieldname="tipo"/>
+    </column>
+    <column name="Forma de pago" order="140">
+    <widget type="text" fieldname="formadepago"/>
+    </column>
+    <column name="Fecha de pago" order="150" display="center">
+    <widget type="date" fieldname="fechadepago"/>
+    </column>
     </columns>
-</view>
+    </view>

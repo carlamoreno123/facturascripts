@@ -1,12 +1,12 @@
 <?php
-namespace FacturaScripts\Plugins\miprimerplugin\Controller;
+namespace FacturaScripts\Plugins\miPrimerPlugin\Controller;
 
 use FacturaScripts\Core\Lib\ExtendedController\EditController;
 
-class EditAlumno extends EditController
+class EditRecibo extends EditController
 {
     public function getModelClassName(): string
     {
-        return 'recibo';
+        return 'Recibo';
     }
 }

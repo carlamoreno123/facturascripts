@@ -1,35 +1,32 @@
-<?php 
-    namespace FacturaScripts\Plugins\miprimerplugin\Controller;
+<?php
+namespace FacturaScripts\Plugins\miPrimerPlugin\Controller;
 
-    use FacturaScripts\Core\Lib\ExtendedController\ListController;
-    
-    class ListAlumno extends ListController {
-        public function getPageData(): array
-        {
-            $page = parent :: getPageData();
-            $page ['title'] ='recibos';
-            $page ['menu'] ='Academia';
-            $page ['icon'] ='fa-solid fa-folder';
-            return $page;
-        }
+use FacturaScripts\Core\Lib\ExtendedController\ListController;
 
-        protected function  createViews()
-        {
-            $this ->addView('Listrecibos','recibo');
-        $this->addSearchFields('Listrecibos', ['fecha', 'fechapago' , 'importe' ,'formadepago']);
-        $this->addOrderBy('Listrecibos', ['fecha'], 'fecha');
-        $this->addOrderBy('Listrecibos', ['fechapago'], 'fechapago');
-        $this->addFilterPeriod('Lisrecibos', 'date', 'period', 'fecha');
+class ListRecibo extends ListController {
+    public function getPageData(): array
+    {
+        $page = parent::getPageData();
+        $page['title'] = 'Recibos';
+        $page['menu'] = 'Academia';
+        $page['icon'] = 'fa-regular fa-file-lines';
+        return $page;
+    }
 
-       
-        }
-        protected function loadData($viewName, $view)
-        {
-            switch($viewName){
-                case 'Listrecibos':
-                    $view ->loadData();
-                    break;
-            }
-            
+    protected function createViews()
+    {
+        $this->addView('ListRecibo', 'Recibo');
+        //$this->addSearchFields('ListRecibo', ['nombre', 'dni', 'telefono','email']);
+        $this->addOrderBy('ListRecibo', ['fecha'], 'Fecha',2);
+        //$this->addOrderBy('ListRecibo', ['nombre'], 'Nombre');
+        $this->addFilterPeriod('ListRecibo', 'date', 'period', 'fecha');
+    }
+
+    protected function loadData($viewName, $view) {
+        switch ($viewName) {
+            case 'ListRecibo':
+                $view->loadData();
+                break; 
         }
     }
+}

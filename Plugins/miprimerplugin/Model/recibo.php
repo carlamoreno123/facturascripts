@@ -1,30 +1,28 @@
 <?php
-namespace FacturaScripts\Plugins\miprimerplugin\Model;
+namespace FacturaScripts\Plugins\miPrimerPlugin\Model;
 
 use FacturaScripts\Core\Model\Base\ModelClass;
 use FacturaScripts\Core\Model\Base\ModelTrait;
 
-class Alumno extends ModelClass{
-
+class Recibo extends ModelClass
+{
     use ModelTrait;
 
     public $idrecibo;
     public $idalumno;
-    public $fecha; 
-    public $fechapago;
-    public $importe;
+    public $fecha;
+    public $fechadepago;
     public $formadepago;
+    public $importe;
     public $tipo;
 
-    
     public static function primaryColumn(): string
     {
-        return 'recibo';
-
+        return 'idrecibo';
     }
+
     public static function tableName(): string
     {
         return 'recibos';
-
     }
 }
