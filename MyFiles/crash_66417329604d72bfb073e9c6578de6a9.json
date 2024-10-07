@@ -1,0 +1,15 @@
+{
+    "code": 1,
+    "message": "Uncaught Error: Class &quot;FacturaScripts\\Plugins\\miprimerplugin\\Controller\\ListRecibo&quot; not found in \\Dinamic\\Controller\\ListRecibo.php:7\n\nStack trace:\n#0 \\vendor\\composer\\ClassLoader.php(571): include()\n#1 \\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile(&#39;C:\\\\wamp64\\\\www\\\\f...&#39;)\n#2 \\Core\\Kernel.php(366): Composer\\Autoload\\ClassLoader-&gt;loadClass(&#39;FacturaScripts\\\\...&#39;)\n#3 \\Core\\Kernel.php(186): FacturaScripts\\Core\\Kernel::runController(&#39;\/ListRecibo&#39;)\n#4 \\index.php(63): FacturaScripts\\Core\\Kernel::run(&#39;\/facturascripts...&#39;)\n#5 {main}\n  thrown",
+    "file": "\\Dinamic\\Controller\\ListRecibo.php",
+    "line": 7,
+    "fragment": "\n2\n3\/**\n4 * Class created by Core\/Base\/PluginDeploy\n5 * @author FacturaScripts <carlos@facturascripts.com>\n6 *\/\n<spam style=\"padding-top: 0.1rem; padding-bottom: 0.1rem; background-color: red; color: white\">7class ListRecibo extends \\FacturaScripts\\Plugins\\miprimerplugin\\Controller\\ListRecibo<\/spam>\n8{\n9\tuse \\FacturaScripts\\Core\\Base\\ExtensionsTrait;\n10}\n11",
+    "hash": "66417329604d72bfb073e9c6578de6a9",
+    "url": "\/facturascripts\/ListRecibo",
+    "report_url": "https:\/\/facturascripts.com\/errores\/66417329604d72bfb073e9c6578de6a9",
+    "report_qr": "https:\/\/api.qrserver.com\/v1\/create-qr-code\/?size=150x150&data=https%3A%2F%2Ffacturascripts.com%2Ferrores%2F66417329604d72bfb073e9c6578de6a9",
+    "core_version": 2024.9,
+    "php_version": "8.2.18",
+    "os": "WINNT",
+    "plugin_list": "miprimerplugin"
+}

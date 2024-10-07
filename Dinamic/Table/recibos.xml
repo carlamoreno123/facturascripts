@@ -1,45 +1,47 @@
 <?xml version="1.0"?>
 <table>
     <column>
-    <name>idrecibo</name>
-    <type>serial</type>
-    <null>NO</null>
+        <name>idrecibo</name>
+        <type>serial</type>
+        <null>NO</null>
     </column>
     <column>
-    <name>idalumno</name>
-    <type>integer</type>
-    <null>NO</null>
+        <name>idalumno</name>
+        <type>integer</type>
+        <null>NO</null>
     </column>
     <column>
-    <name>fecha</name>
-    <type>date</type>
-    <null>NO</null>
+        <name>fecha</name>
+        <type>date</type>
+        <null>NO</null>
     </column>
     <column>
-    <name>fechadepago</name>
-    <type>date</type>
+        <name>fechadepago</name>
+        <type>date</type>
     </column>
     <column>
-    <name>importe</name>
-    <type>double precision</type>
-    <null>NO</null>
+        <name>importe</name>
+        <type>double precision</type>
+        <null>NO</null>
     </column>
     <column>
-    <name>formadepago</name>
-    <type>character varying(50)</type>
-    <null>NO</null>
+        <name>formadepago</name>
+        <type>character varying(50)</type>
+        <null>NO</null>
     </column>
     <column>
-    <name>tipo</name>
-    <type>character varying(30)</type>
-    <null>NO</null>
+        <name>tipo</name>
+        <type>character varying(30)</type>
+        <null>NO</null>
     </column>
     <constraint>
-    <name>recibos_pkey</name>
-    <type>PRIMARY KEY (idrecibo)</type>
+        <name>recibos_pkey</name>
+        <type>PRIMARY KEY (idrecibo)</type>
     </constraint>
     <constraint>
-    <name>ca_recibos_alumnos</name>
-    <type>FOREIGN KEY (idalumno) REFERENCES alumnos (idalumno) ON DELETE CASCADE</type>
+        <name>ca_recibos_alumnos</name>
+        <type>FOREIGN KEY (idalumno) REFERENCES alumnos (idalumno) ON DELETE CASCADE</type>
     </constraint>
-    </table>
+</table>
+<!--Cascade
+es para eliminar todo de un recibo si borras el alumno-->

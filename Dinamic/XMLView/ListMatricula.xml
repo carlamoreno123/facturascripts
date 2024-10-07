@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view>
+    <columns>
+        <column name="fechaalta" order="100">
+            <widget type="date" fieldname="fechaalta"/>
+        </column>
+        <column name="fechabaja" order="110" display="center">
+            <widget type="date" fieldname="fechabaja"/>
+        </column>
+        <column name="cuota" order="120" display="center">
+            <widget type="money" fieldname="cuota"/>
+        </column>
+    </columns>
+</view>

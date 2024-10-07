@@ -4,6 +4,6 @@
  * Class created by Core/Base/PluginDeploy
  * @author FacturaScripts <carlos@facturascripts.com>
  */
-class Recibo extends \FacturaScripts\Plugins\miprimerplugin\Model\Recibo
+class Matricula extends \FacturaScripts\Plugins\miprimerplugin\Model\Matricula
 {
 }

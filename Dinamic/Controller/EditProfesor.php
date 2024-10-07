@@ -4,7 +4,7 @@
  * Class created by Core/Base/PluginDeploy
  * @author FacturaScripts <carlos@facturascripts.com>
  */
-class ListRecibo extends \FacturaScripts\Plugins\miprimerplugin\Controller\ListRecibo
+class EditProfesor extends \FacturaScripts\Plugins\miprimerplugin\Controller\EditProfesor
 {
 	use \FacturaScripts\Core\Base\ExtensionsTrait;
 }

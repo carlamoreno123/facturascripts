@@ -3,8 +3,7 @@ namespace FacturaScripts\Plugins\miPrimerPlugin\Model;
 
 use FacturaScripts\Core\Model\Base\ModelClass;
 use FacturaScripts\Core\Model\Base\ModelTrait;
-
-class Recibo extends ModelClass
+class Recibo extends ModelClass //Singular y mayuscula siempre que sea una clase 
 {
     use ModelTrait;
 
@@ -21,7 +20,7 @@ class Recibo extends ModelClass
         return 'idrecibo';
     }
 
-    public static function tableName(): string
+    public static function tableName(): string 
     {
         return 'recibos';
     }

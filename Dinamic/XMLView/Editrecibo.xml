@@ -1,30 +1,31 @@
 <?xml version="1.0"?>
 <view>
     <columns>
-    <column name="Alumno" order="100" numcolumns="4">
-    <widget type="autocomplete" fieldname="idalumno" onclick="EditAlumno">
-    <values source="alumnos" fieldcode="idalumno" fieldtitle="nombre"/>
-    </widget>
-    </column>
-    <column name="Importe" order="110" numcolumns="2" display="right">
-    <widget type="money" fieldname="importe"/>
-    </column>
-    <column name="Fecha" order="120" numcolumns="2" display="center">
-    <widget type="date" fieldname="fecha"/>
-    </column>
-    <column name="Tipo" order="130" numcolumns="3">
-    <widget type="select" fieldname="tipo" required="true">
-    <values title="Cuota">Cuota</values>
-    <values title="Matr&#xED;cula">Matr&#xED;cula</values>
-    </widget>
-    </column>
-    <column name="Forma de pago" order="140" numcolumns="3">
-    <widget type="select" fieldname="formadepago" required="true">
-    <values source="formaspago" fieldcode="codpago" fieldtitle="descripcion"/>
-    </widget>
-    </column>
-    <column name="Fecha de pago" order="150" numcolumns="3" display="center">
-    <widget type="date" fieldname="fechadepago"/>
-    </column>
+        <column name="Alumno" order="100" numcolumns="4">
+            <widget type="autocomplete" fieldname="idalumno" onclick="EditAlumno"><!--Cuando
+                pulsas encima te lleva a la ficha de ese alumno-->
+                <values source="alumnos" fieldcode="idalumno" fieldtitle="nombre"/>
+            </widget>
+        </column>
+        <column name="Importe" order="110" numcolumns="2" display="right">
+            <widget type="money" fieldname="importe"/>
+        </column>
+        <column name="Fecha" order="120" numcolumns="2" display="center">
+            <widget type="date" fieldname="fecha"/>
+        </column>
+        <column name="Tipo" order="130" numcolumns="3">
+            <widget type="select" fieldname="tipo" required="true">
+                <values title="Cuota">Cuota</values>
+                <values title="Matricula">Matr&#xED;cula</values>
+            </widget>
+        </column>
+        <column name="Forma de pago" order="140" numcolumns="3">
+            <widget type="select" fieldname="formadepago" required="true">
+                <values source="formaspago" fieldcode="codpago" fieldtitle="descripcion"/>
+            </widget>
+        </column>
+        <column name="Fecha de pago" order="150" display="center" numcolumns="3">
+            <widget type="date" fieldname="fechadepago"/>
+        </column>
     </columns>
-    </view>
+</view>

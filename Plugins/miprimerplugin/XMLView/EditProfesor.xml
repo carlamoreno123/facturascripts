@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+    <columns>
+        <column name="Nombre" order ="100" numcolumns='1'>
+            <widget type="autocomplete" fieldname="idprofesor" onclick="EditProfesor"> <!--Cuando pulsas encima te lleva a la ficha de ese alumno-->
+                <values source="profesores" fieldcode="idprofesor" fieldtitle="nombre"/>
+            </widget>
+        </column>
+        <column name="email" order ="110" numcolumns= '2' display="center" >
+            <widget type="email" fieldname ="email"/>
+        </column>
+    </columns>
+</view>

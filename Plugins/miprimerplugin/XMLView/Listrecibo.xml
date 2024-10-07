@@ -1,24 +1,30 @@
 <view>
     <columns>
-    <column name="Alumno" order="100">
-    <widget type="autocomplete" fieldname="idalumno" onclick="EditAlumno">
-    <values source="alumnos" fieldcode="idalumno" fieldtitle="nombre"/>
-    </widget>
-    </column>
+        <column name="Alumno" order="100">
+            <widget type="autocomplete" fieldname="idalumno" onclick="EditAlumno"> <!--Cuando pulsas encima te lleva a la ficha de ese alumno-->
+                <values source="alumnos" fieldcode="idalumno" fieldtitle="nombre"/>
+            </widget>
+        </column>
     <column name="Importe" order="110" display="right">
-    <widget type="money" fieldname="importe"/>
+            <widget type="money" fieldname="importe"/>
     </column>
     <column name="Fecha" order="120" display="center">
     <widget type="date" fieldname="fecha"/>
     </column>
     <column name="Tipo" order="130">
-    <widget type="text" fieldname="tipo"/>
+        <widget type="text" fieldname="tipo"/>
     </column>
     <column name="Forma de pago" order="140">
-    <widget type="text" fieldname="formadepago"/>
+        <widget type="autocomplete" fieldname="formadepago" />
+    <values source="formaspago" fieldcode="codpago" fieldtitle="descripcion"/>
     </column>
     <column name="Fecha de pago" order="150" display="center">
-    <widget type="date" fieldname="fechadepago"/>
+        <widget type="date" fieldname="fechadepago"/>
     </column>
     </columns>
+    <rows>
+        <row type ='status'>
+            <option color="danger" fieldname='fechadepago' title='No pagado'>null:</option>
+        </row>
+    </rows>
     </view>

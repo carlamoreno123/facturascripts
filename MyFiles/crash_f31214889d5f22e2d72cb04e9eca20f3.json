@@ -1,0 +1,15 @@
+{
+    "code": 64,
+    "message": "Cannot declare class FacturaScripts\\Plugins\\miprimerplugin\\Controller\\EditAlumno, because the name is already in use",
+    "file": "\\Plugins\\miprimerplugin\\Controller\\EditAsignatura.php",
+    "line": 6,
+    "fragment": "<?php\r\n1<?php\r\n2namespace FacturaScripts\\Plugins\\miprimerplugin\\Controller;\r\n3\r\n4use FacturaScripts\\Core\\Lib\\ExtendedController\\EditController;\r\n5\r\n<spam style=\"padding-top: 0.1rem; padding-bottom: 0.1rem; background-color: red; color: white\">6class EditAlumno extends EditController\r<\/spam>\n7{\r\n8    public function getModelClassName(): string\r\n9    {\r\n10        return 'Asignatura';\r\n11    }\r",
+    "hash": "f31214889d5f22e2d72cb04e9eca20f3",
+    "url": "\/facturascripts\/AdminPlugins",
+    "report_url": "https:\/\/facturascripts.com\/errores\/f31214889d5f22e2d72cb04e9eca20f3",
+    "report_qr": "https:\/\/api.qrserver.com\/v1\/create-qr-code\/?size=150x150&data=https%3A%2F%2Ffacturascripts.com%2Ferrores%2Ff31214889d5f22e2d72cb04e9eca20f3",
+    "core_version": 2024.9,
+    "php_version": "8.2.18",
+    "os": "WINNT",
+    "plugin_list": "miprimerplugin"
+}

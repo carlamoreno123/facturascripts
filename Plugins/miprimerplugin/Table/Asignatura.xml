@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+    <column>
+        <name>idasignatura</name>
+        <type>serial</type>
+        <null>NO</null>
+    </column>
+    <column>
+        <name>idprofesor</name>
+        <type>character varying(100)</type>
+        <null>NO</null>
+    </column>
+     <column>
+        <name>nombre</name>
+        <type>character varying(9)</type>
+        <null>NO</null>
+    </column>
+     <column>
+        <name>material</name>
+        <type>character varying(9)</type>
+    </column>
+     <column>
+        <name>plazas</name>
+        <type>serial</type>
+        <null>NO</null>
+    </column>
+    <constraint>
+        <name>asignaturas_pkey</name>
+        <type>PRIMARY KEY (idasignatura)</type>
+    </constraint>
+    <constraint>
+        <name>ca_asignaturas_profesor</name>
+        <type>FOREIGN KEY (idprofesor) REFERENCES profesores (idprofesor) ON DELETE CASCADE</type>
+    </constraint>
+</table>

@@ -1,0 +1,15 @@
+{
+    "code": 1,
+    "message": "Uncaught Error: Class &quot;FacturaScripts\\Plugins\\miprimerplugin\\Model\\Asignatura&quot; not found in \\Dinamic\\Model\\Asignatura.php:7\n\nStack trace:\n#0 \\vendor\\composer\\ClassLoader.php(571): include()\n#1 \\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile(&#39;C:\\\\wamp64\\\\www\\\\f...&#39;)\n#2 [internal function]: Composer\\Autoload\\ClassLoader-&gt;loadClass(&#39;FacturaScripts\\\\...&#39;)\n#3 \\Core\\Lib\\ExtendedController\\BaseView.php(163): class_exists(&#39;\\\\FacturaScripts...&#39;)\n#4 \\Core\\Lib\\ExtendedController\\ListController.php(258): FacturaScripts\\Core\\Lib\\ExtendedController\\BaseView-&gt;__construct(&#39;ListAsignatura&#39;, &#39;Asignaturas&#39;, &#39;\\\\FacturaScripts...&#39;, &#39;fa-solid fa-boo...&#39;)\n#5 \\Plugins\\miprimerplugin\\Controller\\ListAlumno.php(47): FacturaScripts\\Core\\Lib\\ExtendedController\\ListController-&gt;addView(&#39;ListAsignatura&#39;, &#39;Asignatura&#39;, &#39;Asignaturas&#39;, &#39;fa-solid fa-boo...&#39;)\n#6 \\Plugins\\miprimerplugin\\Controller\\ListAlumno.php(23): FacturaScripts\\Plugins\\miprimerplugin\\Controller\\ListAlumno-&gt;createAsignatura()\n#7 \\Core\\Lib\\ExtendedController\\BaseController.php(215): FacturaScripts\\Plugins\\miprimerplugin\\Controller\\ListAlumno-&gt;createViews()\n#8 \\Core\\Lib\\ExtendedController\\ListController.php(59): FacturaScripts\\Core\\Lib\\ExtendedController\\BaseController-&gt;privateCore(Object(Symfony\\Component\\HttpFoundation\\Response), Object(FacturaScripts\\Dinamic\\Model\\User), Object(FacturaScripts\\Core\\Base\\ControllerPermissions))\n#9 \\Core\\Base\\Controller.php(301): FacturaScripts\\Core\\Lib\\ExtendedController\\ListController-&gt;privateCore(Object(Symfony\\Component\\HttpFoundation\\Response), Object(FacturaScripts\\Dinamic\\Model\\User), Object(FacturaScripts\\Core\\Base\\ControllerPermissions))\n#10 \\Core\\Kernel.php(367): FacturaScripts\\Core\\Base\\Controller-&gt;run()\n#11 \\Core\\Kernel.php(186): FacturaScripts\\Core\\Kernel::runController(&#39;\/ListAlumno&#39;)\n#12 \\index.php(63): FacturaScripts\\Core\\Kernel::run(&#39;\/facturascripts...&#39;)\n#13 {main}\n  thrown",
+    "file": "\\Dinamic\\Model\\Asignatura.php",
+    "line": 7,
+    "fragment": "\n2\n3\/**\n4 * Class created by Core\/Base\/PluginDeploy\n5 * @author FacturaScripts <carlos@facturascripts.com>\n6 *\/\n<spam style=\"padding-top: 0.1rem; padding-bottom: 0.1rem; background-color: red; color: white\">7class Asignatura extends \\FacturaScripts\\Plugins\\miprimerplugin\\Model\\Asignatura<\/spam>\n8{\n9}\n10",
+    "hash": "c910764dac64ad0ee9fab7ca846b8c15",
+    "url": "\/facturascripts\/ListAlumno",
+    "report_url": "https:\/\/facturascripts.com\/errores\/c910764dac64ad0ee9fab7ca846b8c15",
+    "report_qr": "https:\/\/api.qrserver.com\/v1\/create-qr-code\/?size=150x150&data=https%3A%2F%2Ffacturascripts.com%2Ferrores%2Fc910764dac64ad0ee9fab7ca846b8c15",
+    "core_version": 2024.9,
+    "php_version": "8.2.18",
+    "os": "WINNT",
+    "plugin_list": "miprimerplugin"
+}

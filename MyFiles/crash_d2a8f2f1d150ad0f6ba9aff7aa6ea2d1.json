@@ -1,0 +1,15 @@
+{
+    "code": 64,
+    "message": "Cannot declare class FacturaScripts\\Plugins\\miprimerplugin\\Model\\Alumno, because the name is already in use",
+    "file": "\\Plugins\\miprimerplugin\\Model\\Profesor.php",
+    "line": 7,
+    "fragment": "namespace FacturaScripts\\Plugins\\miprimerplugin\\Model;\r\n2namespace FacturaScripts\\Plugins\\miprimerplugin\\Model;\r\n3\r\n4use FacturaScripts\\Core\\Model\\Base\\ModelClass;\r\n5use FacturaScripts\\Core\\Model\\Base\\ModelTrait;\r\n6\r\n<spam style=\"padding-top: 0.1rem; padding-bottom: 0.1rem; background-color: red; color: white\">7class Alumno extends ModelClass{\r<\/spam>\n8\r\n9    use ModelTrait;\r\n10\r\n11    public $nombre;\r\n12    public $correo;\r",
+    "hash": "d2a8f2f1d150ad0f6ba9aff7aa6ea2d1",
+    "url": "\/facturascripts\/ListAlumno",
+    "report_url": "https:\/\/facturascripts.com\/errores\/d2a8f2f1d150ad0f6ba9aff7aa6ea2d1",
+    "report_qr": "https:\/\/api.qrserver.com\/v1\/create-qr-code\/?size=150x150&data=https%3A%2F%2Ffacturascripts.com%2Ferrores%2Fd2a8f2f1d150ad0f6ba9aff7aa6ea2d1",
+    "core_version": 2024.9,
+    "php_version": "8.2.18",
+    "os": "WINNT",
+    "plugin_list": "miprimerplugin"
+}

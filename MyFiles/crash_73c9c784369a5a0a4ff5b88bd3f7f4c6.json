@@ -1,0 +1,15 @@
+{
+    "code": 0,
+    "message": "An exception has been thrown during the rendering of a template (&quot;Failed to write cache file &quot;\/MyFiles\/Cache\/Twig\/6f\/6fde245027bce770b750c5bfdf375448.php&quot;.&quot;).\n\nStack trace:\n#0 \\vendor\\twig\\twig\\src\\Template.php(335): Twig\\Template-&gt;yield(Array)\n#1 \\vendor\\twig\\twig\\src\\TemplateWrapper.php(38): Twig\\Template-&gt;render(Array)\n#2 \\vendor\\twig\\twig\\src\\Environment.php(307): Twig\\TemplateWrapper-&gt;render(Array)\n#3 \\Core\\Html.php(92): Twig\\Environment-&gt;render(&#39;Master\/PanelCon...&#39;, Array)\n#4 \\Core\\Base\\Controller.php(314): FacturaScripts\\Core\\Html::render(&#39;Master\/PanelCon...&#39;, Array)\n#5 \\Core\\Kernel.php(367): FacturaScripts\\Core\\Base\\Controller-&gt;run()\n#6 \\Core\\Kernel.php(186): FacturaScripts\\Core\\Kernel::runController(&#39;\/EditProfesor&#39;)\n#7 \\index.php(63): FacturaScripts\\Core\\Kernel::run(&#39;\/facturascripts...&#39;)\n#8 {main}",
+    "file": "\\Dinamic\\View\\Master\\PanelController.html.twig",
+    "line": 20,
+    "fragment": " *\n15 *\n16 * You should have received a copy of the GNU Lesser General Public License\n17 * along with this program. If not, see http:\/\/www.gnu.org\/licenses\/.\n18 *\/\n19#}\n<spam style=\"padding-top: 0.1rem; padding-bottom: 0.1rem; background-color: red; color: white\">20{% extends \"Master\/MenuBgTemplate.html.twig\" %}<\/spam>\n21\n22{% block bodyHeaderOptions %}\n23    {{ parent() }}\n24    {% set pageData = fsc.getPageData() %}\n25    {% set firstView = fsc.views | first %}",
+    "hash": "73c9c784369a5a0a4ff5b88bd3f7f4c6",
+    "url": "\/facturascripts\/EditProfesor",
+    "report_url": "https:\/\/facturascripts.com\/errores\/73c9c784369a5a0a4ff5b88bd3f7f4c6",
+    "report_qr": "https:\/\/api.qrserver.com\/v1\/create-qr-code\/?size=150x150&data=https%3A%2F%2Ffacturascripts.com%2Ferrores%2F73c9c784369a5a0a4ff5b88bd3f7f4c6",
+    "core_version": 2024.9,
+    "php_version": "8.2.18",
+    "os": "WINNT",
+    "plugin_list": "miprimerplugin"
+}

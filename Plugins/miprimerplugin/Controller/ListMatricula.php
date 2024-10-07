@@ -3,29 +3,26 @@ namespace FacturaScripts\Plugins\miPrimerPlugin\Controller;
 
 use FacturaScripts\Core\Lib\ExtendedController\ListController;
 
-class ListRecibo extends ListController {
+class ListMatricula extends ListController {
     public function getPageData(): array
     {
         $page = parent::getPageData();
-        $page['title'] = 'Recibos';
+        $page['title'] = 'Matriculas';
         $page['menu'] = 'Academia';
-        $page['icon'] = 'fa-regular fa-file-lines';
+        $page['icon'] = 'fa-solid fa-handshake';
         return $page;
     }
 
     protected function createViews()
     {
-        $this->addView('ListRecibo', 'Recibo');
+        $this->addView('ListMatricula', 'Matricula');
         
-        $this->addOrderBy('ListRecibo', ['fecha'], 'Fecha',2);
-     
-        $this->addFilterPeriod('ListRecibo', 'date', 'period', 'fecha');
 
     }
 
     protected function loadData($viewName, $view) {
         switch ($viewName) {
-            case 'ListRecibo':
+            case 'ListMatricula':
                 $view->loadData();
                 break; 
         }
