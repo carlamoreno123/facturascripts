@@ -25,6 +25,10 @@ class Matricula extends ModelClass{
         return 'matriculas';
 
     }
+    public function url (string $type ='auto', string $list='ListAlumno?activetab=List'): string {
+        return parent :: url ($type,$list);
+    }
+
 
 
 }

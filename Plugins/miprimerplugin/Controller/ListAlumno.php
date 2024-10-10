@@ -19,6 +19,7 @@
         {
             $this->createAlumno();
             $this->createRecibo();
+            $this->createMatricula();
             
         }
         protected function createAlumno($viewName='ListAlumno'){
@@ -35,6 +36,12 @@
                 $this->addFilterPeriod('ListRecibo', 'date', 'period', 'fecha');
 
             }
+            protected function createMatricula($viewName='ListRecibo'){
+                $this->addView('ListMatricula', 'Matricula' , 'Matriculas','fa-solid fa-file-invoice');
+                $this->addOrderBy('ListMatricula', ['fechaalta'], 'Fechaalta',2);
+                $this->addFilterPeriod('ListMatricula', 'date', 'period', 'fechaalta');
+               
+            }
 
             
         
@@ -42,7 +49,7 @@
         protected function loadData($viewName, $view)
         {
             switch($viewName){
-                case 'ListProfesor':
+                case 'ListMatricula':
                 case 'ListRecibo':
                 case 'ListAlumno':
                     $view ->loadData();

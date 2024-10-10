@@ -24,4 +24,8 @@ class Recibo extends ModelClass //Singular y mayuscula siempre que sea una clase
     {
         return 'recibos';
     }
+    public function url (string $type ='auto', string $list='ListAlumno?activetab=List'): string {
+        return parent :: url ($type,$list);
+    }
+
 }

@@ -9,6 +9,9 @@
         <name>nombre</name>
         <type>character varying(100)</type>
         <null>NO</null>
+        <default>
+            hola
+        </default>
     </column>
      <column>
         <name>dni</name>
@@ -27,7 +30,7 @@
         <type>character varying(50)</type>
         <null>NO</null>
     </column>
-    <constraint>
+        <constraint><!-- restricciones-->
         <name>alumnos_pkey</name>
         <type>PRIMARY KEY (idalumno)</type>
      </constraint>

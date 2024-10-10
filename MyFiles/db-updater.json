@@ -4,8 +4,11 @@
     "work_events",
     "settings",
     "users",
-    "profesores",
+    "alumnos",
     "pages_options",
     "pages_filters",
+    "recibos",
+    "matriculas",
+    "divisas",
     "logs"
 ]

@@ -474,11 +474,6 @@
         "customId": "",
         "position": 0
     },
-    "\/ListMatricula": {
-        "controller": "\\FacturaScripts\\Dinamic\\Controller\\ListMatricula",
-        "customId": "",
-        "position": 0
-    },
     "\/ListPais": {
         "controller": "\\FacturaScripts\\Dinamic\\Controller\\ListPais",
         "customId": "",
@@ -516,11 +511,6 @@
     },
     "\/ListProveedor": {
         "controller": "\\FacturaScripts\\Dinamic\\Controller\\ListProveedor",
-        "customId": "",
-        "position": 0
-    },
-    "\/ListRecibo": {
-        "controller": "\\FacturaScripts\\Dinamic\\Controller\\ListRecibo",
         "customId": "",
         "position": 0
     },
