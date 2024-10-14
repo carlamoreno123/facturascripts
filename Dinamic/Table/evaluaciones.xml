@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+    <column>
+        <name>idevaluacion</name>
+        <type>serial</type>
+        <null>NO</null>
+    </column>
+    <column>
+        <name>idalumno</name>
+        <type>serial</type>
+        <null>NO</null>
+    </column>
+    <column>
+        <name>idasignatura</name>
+        <type>serial</type>
+        <null>NO</null>
+    </column>
+    <column>
+        <name>idprofesor</name>
+        <type>serial</type>
+        <null>NO</null>
+    </column>
+     <column>
+        <name>fecha</name>
+        <type>date</type>
+        <null>NO</null>
+    </column>
+     <column>
+        <name>nota</name>
+        <type>integer</type>
+        <null>NO</null>
+    </column>
+     <column>
+        <name>comportamiento</name>
+        <type>integer</type>
+        <null>NO</null>
+    </column>
+    <column>
+        <name>observaciones</name>
+        <type>character varying(50)</type>
+    </column>
+        <constraint><!-- restricciones-->
+        <name>evaluaciones_pkey</name>
+        <type>PRIMARY KEY (idevaluacion)</type>
+     </constraint>
+     <constraint>
+        <name>ca_evaluaciones_alumno</name>
+        <type>FOREIGN KEY (idalumno) REFERENCES profesores (idalumno) ON DELETE CASCADE</type>
+    </constraint>
+</table>

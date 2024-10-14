@@ -16,4 +16,4 @@
             <widget type="text" fieldname="plazas" />
         </column> 
     </columns>
-    </view>
+</view>

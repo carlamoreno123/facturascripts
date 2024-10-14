@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <view>
     <columns>
-        <column name="Nombre" order="100" numcolumns="2">
+        <column name="Profesor" order="100">
+            <widget type="autocomplete" fieldname="idprofesor" onclick="EditProfesor">
+                <values source="profesores" fieldcode="idprofesor" fieldtitle="nombre"/>
+            </widget>
+        </column>
+        <column name="nombre" order="110">
             <widget type="text" fieldname="nombre"/>
         </column>
-        <column name="material" order="110" display="center" numcolumns="3">
+        <column name="material" order="110" display="center">
             <widget type="text" fieldname="material"/>
         </column>
-        <column name="plazas" order="120" display="center" numcolumns="3">
+        <column name="plazas" order="120" display="center">
             <widget type="text" fieldname="plazas"/>
-        </column>
+        </column> 
     </columns>
-</view>
+    </view>

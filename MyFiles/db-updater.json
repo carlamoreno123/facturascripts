@@ -6,9 +6,7 @@
     "users",
     "alumnos",
     "pages_options",
-    "pages_filters",
     "recibos",
-    "matriculas",
-    "divisas",
+    "pages_filters",
     "logs"
 ]

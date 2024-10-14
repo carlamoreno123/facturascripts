@@ -22,7 +22,7 @@ class Matricula extends ModelClass{
     }
     public static function tableName(): string
     {
-        return 'matriculas';
+        return 'Matriculas';
 
     }
     public function url (string $type ='auto', string $list='ListAlumno?activetab=List'): string {

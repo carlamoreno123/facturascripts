@@ -7,7 +7,7 @@
     </column>
     <column>
         <name>idprofesor</name>
-        <type>character varying(100)</type>
+        <type>serial</type>
         <null>NO</null>
     </column>
      <column>
@@ -18,10 +18,11 @@
      <column>
         <name>material</name>
         <type>character varying(9)</type>
+        <null>NO</null>
     </column>
      <column>
         <name>plazas</name>
-        <type>serial</type>
+        <type>integer</type>
         <null>NO</null>
     </column>
     <constraint>

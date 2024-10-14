@@ -20,6 +20,7 @@
             $this->createAlumno();
             $this->createRecibo();
             $this->createMatricula();
+            $this->createEvaluacion();
             
         }
         protected function createAlumno($viewName='ListAlumno'){
@@ -42,6 +43,12 @@
                 $this->addFilterPeriod('ListMatricula', 'date', 'period', 'fechaalta');
                
             }
+            protected function createEvaluacion($viewName='ListEvaluacion'){
+                $this->addView('ListEvaluacion', 'Evaluacion' , 'Evaluaciones','fa-solid fa-file-invoice');
+                $this->addOrderBy('ListEvaluacion', ['fecha'], 'fecha');
+                $this->addFilterPeriod('ListEvaluacion', 'date', 'period', 'fecha');
+               
+            }
 
             
         
@@ -49,6 +56,7 @@
         protected function loadData($viewName, $view)
         {
             switch($viewName){
+                case 'ListEvaluacion':
                 case 'ListMatricula':
                 case 'ListRecibo':
                 case 'ListAlumno':

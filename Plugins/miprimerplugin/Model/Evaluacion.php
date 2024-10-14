@@ -4,24 +4,31 @@ namespace FacturaScripts\Plugins\miprimerplugin\Model;
 use FacturaScripts\Core\Model\Base\ModelClass;
 use FacturaScripts\Core\Model\Base\ModelTrait;
 
-class Profesor extends ModelClass{
+class Evaluacion extends ModelClass{
 
     use ModelTrait;
 
+    public $idevaluacion;
+    public $idalumno;
+    public $idasignatura;
     public $idprofesor;
-    public $nombre;
-    public $email;
+    public $fecha;
+    public $nota; 
+    public $comportamiento;
+    public $observaciones;
+
 
     
     public static function primaryColumn(): string
     {
-        return 'idprofesor';
+        return 'idevaluacion';
 
     }
     public static function tableName(): string
     {
-        return 'profesores';
+        return 'evaluaciones';
 
     }
+
 
 }

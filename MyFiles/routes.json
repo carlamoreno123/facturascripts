@@ -194,6 +194,11 @@
         "customId": "",
         "position": 0
     },
+    "\/EditEvaluacion": {
+        "controller": "\\FacturaScripts\\Dinamic\\Controller\\EditEvaluacion",
+        "customId": "",
+        "position": 0
+    },
     "\/EditFabricante": {
         "controller": "\\FacturaScripts\\Dinamic\\Controller\\EditFabricante",
         "customId": "",

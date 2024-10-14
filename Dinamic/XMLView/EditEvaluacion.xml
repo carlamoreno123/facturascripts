@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view>
+    <columns>
+        <column name="Alumno" order="100">
+            <widget type="autocomplete" fieldname="idalumno" onclick="EditAlumno"/>
+            <values source="alumnos" fieldcode="idalumno" fieldtitle="nombre"/>
+        </column>
+        <column name="Asignatura" order="100">
+            <widget type="autocomplete" fieldname="idasignatura" onclick="EditAsignatura"/>
+            <values source="asignaturas" fieldcode="idasignatura" fieldtitle="nombre"/>
+        </column>
+        <column name="Profesor" order="100">
+            <widget type="autocomplete" fieldname="idprofesor" onclick="EditProfesor"/>
+            <values source="profesores" fieldcode="idprofesor" fieldtitle="nombre"/>
+        </column>
+        <column name="fecha" order="100">
+            <widget type="date" fieldname="fecha"/>
+        </column>
+        <column name="nota" order="110" display="center">
+            <widget type="number" fieldname="nota"/>
+        </column>
+        <column name="comportamiento" order="120" display="center">
+            <widget type="number" fieldname="comportamiento"/>
+        </column>
+        <column name="observaciones" order="130" display="center">
+            <widget type="text" fieldname="observaciones"/>
+        </column>
+    </columns>
+</view>
