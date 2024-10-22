@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <view>
     <columns>
-            <column name="Alumno" order="100">
-                <widget type="autocomplete" fieldname="idalumno" onclick="EditAlumno"/>
-                <values source="alumnos" fieldcode="idalumno" fieldtitle="nombre"/>
-            </column>
-            <column name="Asignatura" order="100">
-                <widget type="autocomplete" fieldname="idasignatura" onclick="EditAsignatura"/>
-                <values source="asignaturas" fieldcode="idasignatura" fieldtitle="nombre"/>
-            </column>
-        <column name="fechaalta" order="100" numcolumns="2">
-            <widget type="date" fieldname="fechaalta"/>
-        </column>
-        <column name="fechabaja" order="110" display="center" numcolumns="2">
-            <widget type="date" fieldname="fechabaja"/>
-        </column>
-        <column name="cuota" order="120" display="center" numcolumns="3">
-            <widget type="money" fieldname="cuota"/>
-        </column>
+    <column name="Alumno" order="100">
+    <widget type="autocomplete" fieldname="idalumno" onClick="EditAlumno">
+    <values source="alumnos" fieldcode="idalumno" fieldtitle="nombre"/>
+    </widget>
+    </column>
+    <column name="Asignatura" order="110">
+    <widget type="autocomplete" fieldname="idasignatura" onClick="EditAsignatura">
+    <values source="asignaturas" fieldcode="idasignatura" fieldtitle="nombre"/>
+    </widget>
+    </column>
+    <column name="Cuota" order="120" display="right">
+    <widget type="money" fieldname="cuota"/>
+    </column>
+    <column name="Fecha de alta" order="130" display="center">
+    <widget type="date" fieldname="fechaalta"/>
+    </column>
+    <column name="Fecha de baja" order="140" display="center">
+    <widget type="date" fieldname="fechabaja"/>
+    </column>
     </columns>
-</view>
+    </view>

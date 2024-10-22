@@ -37,7 +37,7 @@
     </column>
     <column>
         <name>observaciones</name>
-        <type>character varying(50)</type>
+        <type>character varying(100)</type>
     </column>
         <constraint><!-- restricciones-->
         <name>evaluaciones_pkey</name>

@@ -1,0 +1,15 @@
+{
+    "code": 4,
+    "message": "syntax error, unexpected token &quot;}&quot;",
+    "file": "\\Plugins\\miprimerplugin\\Controller\\EditMatricula.php",
+    "line": 15,
+    "fragment": "class EditMatricula extends EditController\r\n10class EditMatricula extends EditController\r\n11{\r\n12    public function getModelClassName(): string\r\n13    {\r\n14        return 'Matricula';1\r\n<spam style=\"padding-top: 0.1rem; padding-bottom: 0.1rem; background-color: red; color: white\">15    }\r<\/spam>\n16    protected function insertAction()\r\n17    {\r\n18        $asignatura = new Asignatura();\r\n19        $idasignatura = $this->request->request->get('idasignatura');\r\n20        $asignatura = $asignatura->get($idasignatura);\r",
+    "hash": "532daae4728283c5b0d65cc1a8d47ad6",
+    "url": "\/facturascripts\/EditMatricula",
+    "report_url": "https:\/\/facturascripts.com\/errores\/532daae4728283c5b0d65cc1a8d47ad6",
+    "report_qr": "https:\/\/api.qrserver.com\/v1\/create-qr-code\/?size=150x150&data=https%3A%2F%2Ffacturascripts.com%2Ferrores%2F532daae4728283c5b0d65cc1a8d47ad6",
+    "core_version": 2024.9,
+    "php_version": "8.2.18",
+    "os": "WINNT",
+    "plugin_list": "miprimerplugin"
+}

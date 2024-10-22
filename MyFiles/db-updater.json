@@ -6,7 +6,11 @@
     "users",
     "alumnos",
     "pages_options",
-    "recibos",
     "pages_filters",
-    "logs"
+    "recibos",
+    "Matriculas",
+    "evaluaciones",
+    "divisas",
+    "logs",
+    "asignaturas"
 ]

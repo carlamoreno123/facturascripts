@@ -1,40 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <table>
     <column>
-        <name>idmatricula</name>
-        <type>serial</type>
-        <null>NO</null>
+    <name>idmatricula</name>
+    <type>serial</type>
+    <null>NO</null>
     </column>
     <column>
-        <name>idalumno</name>
-        <type>serial</type>
-       
+    <name>idalumno</name>
+    <type>integer</type>
+    <null>NO</null>
     </column>
-     <column>
-        <name>idasignatura</name>
-        <type>serial</type>
+    <column>
+    <name>idasignatura</name>
+    <type>integer</type>
+    <null>NO</null>
     </column>
-     <column>
-        <name>fechaalta</name>
-        <type>date</type>
-        <null>NO</null>
+    <column>
+    <name>fechaalta</name>
+    <type>date</type>
     </column>
-     <column>
-        <name>fechabaja</name>
-        <type>date</type>
-       
+    <column>
+    <name>fechabaja</name>
+    <type>date</type>
     </column>
-     <column>
-        <name>cuota</name>
-        <type>double precision</type>
-        <null>NO</null>
+    <column>
+    <name>cuota</name>
+    <type>double precision</type>
     </column>
     <constraint>
-        <name>matriculas_pkey</name>
-        <type>PRIMARY KEY (idmatricula)</type>
-        </constraint>
-    <constraint>
-        <name>ca_matriculas_alumnos</name>
-        <type>FOREIGN KEY (idalumno) REFERENCES alumnos (idalumno) ON DELETE CASCADE</type>
+    <name>matriculas_pkey</name>
+    <type>PRIMARY KEY (idmatricula)</type>
     </constraint>
-</table>
+    <constraint>
+    <name>ca_matriculas_alumnos</name>
+    <type>FOREIGN KEY (idalumno) REFERENCES alumnos (idalumno) ON DELETE CASCADE</type>
+    </constraint>
+    </table>
